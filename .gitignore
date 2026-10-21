@@ -1,0 +1,17 @@
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+user_progress.json
+user_progress.json.tmp
+audio_cache/
+*.mp3
+.env
+.idea/
+.vscode/
+.DS_Store
