@@ -539,8 +539,6 @@ class InglesRealApp(ctk.CTk):
                 spoken = None
                 if idx < len(exercise.choice_en):
                     spoken = exercise.choice_en[idx]
-                if spoken is None and self._looks_english_choice(choice):
-                    spoken = choice
                 btn = ctk.CTkButton(
                     row,
                     text=choice,

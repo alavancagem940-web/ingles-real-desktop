@@ -53,3 +53,10 @@ def test_real_us_english_markers() -> None:
 def test_challenge_threshold() -> None:
     assert challenge_pass_threshold(6) == 4
     assert challenge_pass_threshold(1) == 1
+
+
+def test_portuguese_choices_are_not_tts_targets() -> None:
+    first = PLACEMENT[0]
+    spoken = [item for item in first.choice_en if item]
+    assert spoken == []
+    assert first.listen_en == "Hello, how are you?"

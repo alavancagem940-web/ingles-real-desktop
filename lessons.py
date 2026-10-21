@@ -101,15 +101,70 @@ def _ex(
     )
 
 
+_EN_WORDS = {
+    "is",
+    "are",
+    "am",
+    "be",
+    "in",
+    "to",
+    "on",
+    "have",
+    "used",
+    "flying",
+    "probably",
+    "return",
+    "change",
+    "sitting",
+    "gotta",
+    "gonna",
+    "wanna",
+    "kinda",
+    "my",
+    "stay",
+}
+
+
 def _looks_english(text: str) -> bool:
-    lowered = text.lower()
+    lowered = text.lower().strip()
     if any(ch in text for ch in "áéíóúãõâêôçÁÉÍÓÚ"):
         return False
+    if lowered in _EN_WORDS:
+        return True
     markers = (
-        "i ", "you ", "we ", "it's", "that's", "gonna", "wanna", "I'm", "i'm",
-        "the ", "a ", "to ", "what", "how", "hey", "yeah", "no ", "let's",
+        "i ",
+        "you ",
+        "we ",
+        "it's",
+        "that's",
+        "gonna",
+        "wanna",
+        "i'm",
+        "i’ll",
+        "i'll",
+        "the ",
+        "what",
+        "how",
+        "hey",
+        "yeah",
+        "let's",
+        "gimme",
+        "lemme",
+        "don't",
+        "can't",
+        "won't",
+        "isn't",
+        "whatcha",
+        "didja",
+        "dunno",
+        "outta",
+        "kinda ",
+        "for real",
+        "no cap",
+        "on it",
+        "my bad",
     )
-    return any(token in lowered for token in markers) or text.isascii() and " " in text
+    return any(token in lowered for token in markers)
 
 
 def _th(title: str, subtitle: str, conceito: str, cultura: str, exemplos: list[tuple[str, str]]) -> Theory:
