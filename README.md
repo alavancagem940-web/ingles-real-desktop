@@ -9,8 +9,8 @@ Isto **não** é o TrilhaPy e **não** ensina Python.
 Precisa de Python 3.10+ e Tkinter (`python3-tk` no Ubuntu/Debian).
 
 ```bash
-git clone https://github.com/alavancagem940-web/ingles-real.git
-cd ingles-real
+git clone https://github.com/alavancagem940-web/ingles-real-desktop.git
+cd ingles-real-desktop
 python3 -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -23,13 +23,13 @@ Em todo exercício e em toda frase há o botão **Ouvir Pronúncia Nativa** (edg
 
 ## Acompanhar no celular
 
-O Python desktop **não instala no iPhone**. A versão de celular é um PWA companheiro, também na conta [alavancagem940-web](https://github.com/alavancagem940-web), em repositório separado — **não use o TrilhaPy**.
+O Python desktop **não instala no iPhone**. A versão de celular é um PWA separado — **não use o TrilhaPy**.
 
-Quando o GitHub Pages do PWA estiver no ar, o endereço será:
+- App: https://alavancagem940-web.github.io/ingles-real/
+- Instalar no iPhone: https://alavancagem940-web.github.io/ingles-real/instalar.html
+- Código do PWA: https://github.com/alavancagem940-web/ingles-real
 
-`https://alavancagem940-web.github.io/ingles-real-web/`
-
-Até lá, versionamos este desktop aqui para você clonar no PC. No telefone: abra o PWA no Safari ou Chrome → **Adicionar à Tela de Início**.
+No telefone: abra no **Safari** → **Adicionar à Tela de Início**.
 
 ## O que tem no app
 
